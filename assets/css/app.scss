@@ -1,0 +1,36 @@
+---
+# Only the main Sass file needs front matter
+---
+
+//******* GLOBALS
+@import 'globals/index';
+//******* VENDORS
+// @import 'vendors/index';
+
+@import 'header';
+@import 'footer';
+
+
+//******* SECTIONS
+
+
+
+// setup font styles
+body {
+  font-size: $font-size;
+	// background-color: $body-bg;
+	font-family: $font-family;
+	color: $color-white;
+}
+
+
+.number {
+	background: #fff;
+	color: #3498db;
+	font-size: 36px;
+	line-height: 100px;
+	margin: 10px;
+	padding: 2%;
+	position: relative;
+	text-align: center;
+}

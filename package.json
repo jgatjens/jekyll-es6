@@ -1,0 +1,21 @@
+{
+  "name": "bdpharma",
+  "version": "1.0.0",
+  "description": "bdpharma website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+		"start": "jekyll s",
+		"build": "./vendor.sh && jekyll build  --config _config.yml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "author": "jgatjens",
+  "license": "ISC",
+  "dependencies": {
+    "clean-css-cli": "^4.0.12",
+    "uglifyjs": "^2.4.10"
+  }
+}

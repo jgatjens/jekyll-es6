@@ -1,0 +1,31 @@
+// Colors
+$color-white: #fff6f7;
+$color-black: #000000;
+$color-primary: #ed1a3a;    // red
+$color-secondary: $color-white;  // white
+
+
+$color-cyan: #1babc5;       // cyan
+$color-gray: #333333;   		// gray
+$color-darkgray: #959595;   // dark gray
+
+$color-link: #0c658d;
+
+// Body
+// Settings for the `<body>` element.
+$body-bg: $color-black;
+$font-family: Helvetica, Arial;
+
+// Types
+$font-size: 15px;
+$font-weight: bold;
+$font-margin: em(19);
+$line-height: 1.1;
+
+$font-size-h1: em(28);
+$font-size-h2: em(28);
+$font-size-h3: em(21);
+
+$font-size-h4: em(35);
+$font-size-h5: em(35);
+$font-size-h6: em(35);
