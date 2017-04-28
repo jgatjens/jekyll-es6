@@ -5,6 +5,8 @@
 We recommend installing [*Ruby > v2.0.0*](https://www.ruby-lang.org/en/) with [*rvm*](https://rvm.io/rvm/install).
 
 ```sh
+# if you have no bundle gem installed
+gem install bundle
 # install gems
 bundle install
 ```

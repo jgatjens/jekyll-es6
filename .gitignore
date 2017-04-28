@@ -4,6 +4,7 @@ dist.zip
 dist/
 .DS_Store
 .sass-cache
+_site
 
 
 
