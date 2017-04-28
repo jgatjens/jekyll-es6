@@ -1,0 +1,32 @@
+
+.button {
+  position: absolute;
+  top: 50%;
+  background: #3498db;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  width: 20px;
+  margin-top: -30px;
+}
+
+.bd-next {
+  right: 0;
+}
+
+.bd-prev {
+  left: 0;
+}
+
+
+.page-slide {
+  width: 100%;
+  text-align: center;
+  height: 85vh;
+  color: white;
+  font-size: 30px;
+  background-color: blue;
+}

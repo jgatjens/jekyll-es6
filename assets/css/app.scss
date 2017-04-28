@@ -1,19 +1,17 @@
 ---
-# Only the main Sass file needs front matter
 ---
 
+@import 'vendors/normalize';
 //******* GLOBALS
-@import 'globals/index';
+@import './globals/index';
 //******* VENDORS
-// @import 'vendors/index';
 
-@import 'header';
-@import 'footer';
+@import './vendors/slick';
 
-
-//******* SECTIONS
-
-
+//******* Layout
+@import './header';
+@import './footer';
+@import './carousel';
 
 // setup font styles
 body {
@@ -23,14 +21,43 @@ body {
 	color: $color-white;
 }
 
+html,
+body,
+.page {
+  height: 100%; /* needed for proper lay */
+  margin: 0;
+  padding: 0;
+}
 
-.number {
-	background: #fff;
-	color: #3498db;
-	font-size: 36px;
-	line-height: 100px;
-	margin: 10px;
-	padding: 2%;
-	position: relative;
-	text-align: center;
+body {
+  overflow: hidden;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header {
+  flex: 0 0 auto;
+  background-color: #3498db;
+  height: 5vh;
+  color: white;
+  text-align: center;
+  line-height: 5vh;
+}
+
+.page-content {
+  flex: 1 1 auto;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.page-footer {
+  flex: 0 0 auto;
+  background-color: #3498db;
+  height: 10vh;
+  color: white;
+  text-align: center;
+  line-height: 10vh;
 }
