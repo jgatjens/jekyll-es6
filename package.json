@@ -1,7 +1,7 @@
 {
-  "name": "bdpharma",
+  "name": "projectname",
   "version": "1.0.0",
-  "description": "bdpharma website",
+  "description": "projectname website",
   "main": "index.html",
   "scripts": {
     "js:vendors": "uglifyjs ./_includes/js/vendors/in-view.min.js ./_includes/js/vendors/jquery.min.js ./_includes/js/vendors/slick.min.js -o ./assets/js/vendor.min.js",
@@ -10,10 +10,6 @@
     "js": "watchify ./_includes/js/app.js -o ./assets/js/app.js -d -t [ babelify  --presets [ es2015 ] ]",
     "build": "npm run js:vendors && npm run js:babel && npm run js:min && jekyll build --config _config.prod.yml",
     "start": "jekyll server & npm run js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@bitbucket.org:jgatjens/bdpharma.git"
   },
   "author": "jgatjens",
   "license": "ISC",

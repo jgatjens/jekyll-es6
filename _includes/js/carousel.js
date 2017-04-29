@@ -1,4 +1,5 @@
 import Http from './http';
+import Storage from './storage';
 
 const $select = {
 	ele: '.bd-carousel',
@@ -8,8 +9,10 @@ const $select = {
 
 class Carousel {
 	constructor() {
-		this.currentId = 0;
+		this.storage = new Storage();
 		this.http = new Http();
+
+		this.currentId = this.storage.getPage();
 
 		this.ele = $($select.ele).slick({
 			slidesToShow: 1,
@@ -21,27 +24,26 @@ class Carousel {
 		$($select.next).on('click', () => this.nextPage());
 		$($select.prev).on('click', () => this.prevPage());
 
-		this.ele.on('beforeChange', (event, slick, currentSlide, nextSlide) => {
-			console.log(currentSlide + ':' + nextSlide);
+		this.ele.on('afterChange', (event, slick, index) => {
+			this.storage.setPage(index);
 		});
 
 		this.nextPage();
 	}
 
 	prevPage() {
-		if (this.currentId > 2){
+		if (this.currentId > 1){
 			setTimeout(() => {
 				this.ele.slick('slickRemove', this.currentId)
 			}, 500);
-			this.currentId--;
-		}
 
-		this.ele.slick('slickPrev');
+			this.currentId--;
+			this.ele.slick('slickPrev');
+		}
 	}
 
 	nextPage(event) {
 		this.currentId++;
-
 		this.http.request(this.currentId)
 			.then((page)=> {
 				this.ele.slick('slickAdd', page);

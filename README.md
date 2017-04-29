@@ -1,4 +1,4 @@
-## BD Pharma
+## Project Name
 
 ### Dependencies and setup
 
@@ -41,15 +41,3 @@ PC:
 - Chrome ✓ (win 10 latest version),
 - Firefox ✓ (win 10 latest version)
 
-Mobile:
-
-- iPhone 6s iOS10 ✓
-- iPhone 6 iOS9 ✓
-- iPhone 5s iOS9 ✓
-- Samsung S3 KitKat (Default browser and Chrome)
-- Samsung S5 Lollipop ✓ (Default browser and Chrome)
-
-Tablet:
-
-- iPad Air or 4 iOS9 ✓
-- iPad Air 2 iOS10 ✓
